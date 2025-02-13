@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET and POST Methods</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      form {
+        margin: 20px auto;
+        padding: 20px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Understanding GET and POST Methods</h1>
+
+    <h2>GET Method</h2>
+    <form action="action.php" method="GET">
+      <label for="name-get">Name:</label>
+      <input type="text" id="name-get" name="name" required />
+
+      <label for="password-get">Password:</label>
+      <input type="password" id="password-get" name="password" required />
+
+      <button type="submit">Submit (GET)</button>
+    </form>
+
+    <h2>POST Method</h2>
+    <form action="action.php" method="POST">
+      <label for="name-post">Name:</label>
+      <input type="text" id="name-post" name="name" required />
+
+      <label for="password-post">Password:</label>
+      <input type="password" id="password-post" name="password" required />
+
+      <button type="submit">Submit (POST)</button>
+    </form>
+  </body>
+</html>
