@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Feedback Form</h1>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label>Name <span class="optional"></span></label>
+          <input type="text" name="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label>Email <span class="optional"></span></label>
+          <input type="email" name="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group">
+          <label>Phone <span class="optional"></span></label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Rating</label>
+          <div class="rating-group">
+            <input type="radio" id="rating1" name="rating" value="1" required />
+            <label for="rating1">1</label>
+            <input type="radio" id="rating2" name="rating" value="2" />
+            <label for="rating2">2</label>
+            <input type="radio" id="rating3" name="rating" value="3" />
+            <label for="rating3">3</label>
+            <input type="radio" id="rating4" name="rating" value="4" />
+            <label for="rating4">4</label>
+            <input type="radio" id="rating5" name="rating" value="5" />
+            <label for="rating5">5</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Questions about our Product/Service</label>
+          <textarea
+            name="questions"
+            required
+            placeholder="Please enter your questions here"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Additional Comments <span class="optional"></span></label>
+          <textarea
+            name="comments"
+            placeholder="Any additional comments"
+          ></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </body>
+</html>
