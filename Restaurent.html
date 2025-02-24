@@ -1,110 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Homepage</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            text-align: center;
-        }
-        #restaurant-name {
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        .navbar {
-            background-color: #333;
-            padding: 15px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-        }
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-        .menu-card {
-            width: 60%;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            background-color: white;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #444;
-            color: white;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        ol {
-            list-style-type: upper-roman;
-            padding-left: 20px;
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #restaurant-name {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      .navbar {
+        background-color: #333;
+        padding: 15px;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 600;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .menu-card {
+        width: 60%;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #444;
+        color: white;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      ol {
+        list-style-type: upper-roman;
+        padding-left: 20px;
+      }
+      .content {
+        flex: 1;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 40px 0;
+        margin-top: 40px;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .footer-section {
+        flex: 1;
+        margin: 0 20px;
+        text-align: left;
+      }
+      .footer-section h3 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .social-links a {
+        color: white;
+        margin-right: 15px;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .social-links a:hover {
+        color: #ddd;
+      }
+      .contact-info p {
+        margin: 10px 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact Us</a>
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="booking.html">Booking</a>
+      <a href="#contact">Contact Us</a>
     </div>
-    
-    <h1 id="restaurant-name">Gourmet Delights</h1>
-    
-    <div class="menu-card">
+
+    <div class="content">
+      <h1 id="restaurant-name">Gourmet Delights</h1>
+
+      <div class="menu-card">
         <h2>Our Specialties</h2>
         <ol>
-            <li>Italian</li>
-            <li>Indian</li>
-            <li>Chinese</li>
-            <li>Mexican</li>
-            <li>French</li>
+          <li>Italian</li>
+          <li>Indian</li>
+          <li>Chinese</li>
+          <li>Mexican</li>
+          <li>French</li>
         </ol>
-    </div>
-    
-    <div class="menu-card">
+      </div>
+
+      <div class="menu-card">
         <h2>Menu</h2>
         <table>
-            <tr>
-                <th>Dish Name</th>
-                <th>Price</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Margherita Pizza</td>
-                <td>$12</td>
-                <td>Classic pizza with fresh tomatoes, mozzarella, and basil.</td>
-            </tr>
-            <tr>
-                <td>Butter Chicken</td>
-                <td>$15</td>
-                <td>Indian-style creamy tomato curry with tender chicken.</td>
-            </tr>
-            <tr>
-                <td>Szechuan Noodles</td>
-                <td>$10</td>
-                <td>Spicy Chinese noodles with stir-fried vegetables.</td>
-            </tr>
+          <tr>
+            <th>Dish Name</th>
+            <th>Price</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Margherita Pizza</td>
+            <td>$12</td>
+            <td>Classic pizza with fresh tomatoes, mozzarella, and basil.</td>
+          </tr>
+          <tr>
+            <td>Butter Chicken</td>
+            <td>$15</td>
+            <td>Indian-style creamy tomato curry with tender chicken.</td>
+          </tr>
+          <tr>
+            <td>Szechuan Noodles</td>
+            <td>$10</td>
+            <td>Spicy Chinese noodles with stir-fried vegetables.</td>
+          </tr>
         </table>
+      </div>
     </div>
-</body>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@gourmetdelights.com</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Location</h3>
+          <p>123 Gourmet Street</p>
+          <p>Foodie District</p>
+          <p>Culinary City, CC 12345</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
